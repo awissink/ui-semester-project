@@ -1,9 +1,11 @@
+/* GENERAL BUTTON SPECS */
 .button-specs {
     background-color: #F2DCD0;
     color: #6A5955;
     border: none;
 }
 
+/* GENERAL COLOR STYLES */
 .primary-blue-color {
     color: #384E71;
 }
@@ -18,43 +20,19 @@
     font-size: 25px;
     font-weight: 600;
 }
-.homepage-catchphrase {
-    font-size: 40px;
-    font-weight: medium;
-    padding-bottom: 20px; 
-}
-.homepage-descriptions {
-    font-family: 'Roboto', 'Montserrat', 'Open Sans', sans-serif;
-    color: #343436;
-    font-size: 20px;
-}
-.homepage-purpose {
-    font-family: 'Raleway', 'Bebas Kai', 'Oswald', sans-serif;
-}
-.homepage-footer {
-    background-color: #F4EBE6;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
 .homepage-header {
     padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 20px;
 }
+.homepage-catchphrase {
+    font-size: 40px;
+    font-weight: medium;
+    padding-bottom: 20px; 
+}
 .homepage-body-padding {
     padding-left: 60px;
     padding-right: 60px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.homepage-footer-padding {
-    padding-left: 40px;
-    padding-right: 40px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -68,4 +46,27 @@
     padding-right:20px;
     padding-left: 20px;
 }
-
+.homepage-descriptions {
+    font-family: 'Roboto', 'Montserrat', 'Open Sans', sans-serif;
+    color: #343436;
+    font-size: 20px;
+}
+.homepage-footer {
+    background-color: #F4EBE6;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.homepage-footer-padding {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.homepage-purpose {
+    font-family: 'Raleway', 'Bebas Kai', 'Oswald', sans-serif;
+}
