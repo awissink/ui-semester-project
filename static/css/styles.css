@@ -19,13 +19,14 @@
     font-weight: 600;
 }
 .homepage-catchphrase {
-    font-size: 48px;
+    font-size: 40px;
     font-weight: medium;
+    padding-bottom: 20px; 
 }
 .homepage-descriptions {
     font-family: 'Roboto', 'Montserrat', 'Open Sans', sans-serif;
     color: #343436;
-    font-size: 24px;
+    font-size: 20px;
 }
 .homepage-purpose {
     font-family: 'Raleway', 'Bebas Kai', 'Oswald', sans-serif;
@@ -35,22 +36,36 @@
     width: 100%;
     position: absolute;
     left: 0;
-    padding: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
-
-
-/* Custom styles for the header */
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px; /* Add padding as needed */
+.homepage-header {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 20px;
 }
-
-.header-left {
+.homepage-body-padding {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.homepage-footer-padding {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.homepage-left-div {
     width: 50%;
+    float:left;
+    padding-right: 20px;
+}
+.homepage-right-div {
+    margin-left: 50%;
+    padding-right:20px;
+    padding-left: 20px;
 }
 
-.header-right {
-    margin-left: auto; /* Push the content to the right edge */
-}
