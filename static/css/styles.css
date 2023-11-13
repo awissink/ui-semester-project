@@ -1,0 +1,56 @@
+.button-specs {
+    background-color: #F2DCD0;
+    color: #6A5955;
+    border: none;
+}
+
+.primary-blue-color {
+    color: #384E71;
+}
+
+.color-scheme {
+    height: 300px;
+    background: linear-gradient(90deg, #384E71, #ECC6BB, #A0C9E7, #EFEEEC, #F2DCD0);
+}
+
+/* HOMEPAGE STYLES */
+.homepage-name {
+    font-size: 25px;
+    font-weight: 600;
+}
+.homepage-catchphrase {
+    font-size: 48px;
+    font-weight: medium;
+}
+.homepage-descriptions {
+    font-family: 'Roboto', 'Montserrat', 'Open Sans', sans-serif;
+    color: #343436;
+    font-size: 24px;
+}
+.homepage-purpose {
+    font-family: 'Raleway', 'Bebas Kai', 'Oswald', sans-serif;
+}
+.homepage-footer {
+    background-color: #F4EBE6;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    padding: 40px;
+}
+
+
+/* Custom styles for the header */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Add padding as needed */
+}
+
+.header-left {
+    width: 50%;
+}
+
+.header-right {
+    margin-left: auto; /* Push the content to the right edge */
+}
