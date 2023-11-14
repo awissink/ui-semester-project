@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MentorMatchup Sign Up</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <script src="../static/js/script.js"></script>
+</head>
+<body>
+
+<div class="container-fluid my-5">
+    <nav class="homepage-header d-flex justify-content-between align-items-center">
+        <span class="homepage-name primary-blue-color signup-link-to-home-specs signup-link-to-home-specs:hover" onclick="redirectToHomepage()">MentorMatchup</span>
+        <div>
+            <!-- <a href="#" class="mx-2">Home</a>
+            <a href="#" class="mx-2">Matches</a>
+            <a href="#" class="mx-2">Contact</a> -->
+            <a href="#" class="button-specs btn btn-outline-secondary rounded-pill">Sign In</a>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h3 class="homepage-catchphrase text-center my-4">Mentor Sign Up</h3>
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control signup-form-specs signup-form-fields" placeholder="Name" id="name">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control signup-form-specs signup-form-fields" placeholder="Email" id="email">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control signup-form-specs signup-form-fields" placeholder="Password" id="password">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control signup-form-specs signup-form-fields" placeholder="Confirm Password" id="confirm-password">
+                </div>
+                <div class="form-group">
+                    <select class="form-control signup-form-specs signup-form-fields" id="school">
+                        <option value="" selected disabled>School</option>
+                        <option>BC</option>
+                        <option>SEAS</option>
+                        <option>CC</option>
+                        <option>GS</option>
+                        <option>Other</option>>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select class="form-control signup-form-specs signup-form-fields" id="major">
+                        <option value="" selected disabled>Major</option>
+                        <option>Computer Science</option>
+                        <option>Economy</option>
+                        <option>Math</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select class="form-control signup-form-specs signup-form-fields" id="years-of-experience">
+                        <option value="" selected disabled>Years of Experience</option>
+                        <option>0-1</option>
+                        <option>1-2</option>
+                        <option>2-3</option>
+                        <option>3+</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control signup-form-specs signup-form-fields" placeholder="Past Experience" id="past-experience">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control signup-form-specs signup-form-fields" placeholder="Past Companies" id="past-companies">
+                </div>
+                <div class="form-group text-center">
+                    <button type="submit" class="btn btn-outline-secondary rounded-pill button-specs signup-button-specs">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

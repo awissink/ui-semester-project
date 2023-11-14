@@ -1,6 +1,6 @@
 /* GENERAL BUTTON SPECS */
 .button-specs {
-    background-color: #F2DCD0;
+    background-color: #ECC6BB;
     color: #6A5955;
     border: none;
 }
@@ -23,20 +23,25 @@
 .homepage-header {
     padding-left: 60px;
     padding-right: 60px;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
 }
 .homepage-catchphrase {
     font-size: 40px;
     font-weight: medium;
     padding-bottom: 20px; 
+    color: #384E71;
+}
+.homepage-image {
+    width: 550px;
+    height: 400px;
 }
 .homepage-body-padding {
     padding-left: 60px;
     padding-right: 60px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
 }
 .homepage-left-div {
+    padding-top: 20px;
     width: 50%;
     float:left;
     padding-right: 20px;
@@ -44,7 +49,8 @@
 .homepage-right-div {
     margin-left: 50%;
     padding-right:20px;
-    padding-left: 20px;
+    padding-left: 30px;
+    margin-bottom: 30px;
 }
 .homepage-descriptions {
     font-family: 'Roboto', 'Montserrat', 'Open Sans', sans-serif;
@@ -58,15 +64,38 @@
     left: 0;
     padding-left: 60px;
     padding-right: 60px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 .homepage-footer-padding {
     padding-left: 40px;
     padding-right: 40px;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     padding-bottom: 20px;
 }
 .homepage-purpose {
-    font-family: 'Raleway', 'Bebas Kai', 'Oswald', sans-serif;
+    font-size: 25px;
+    transform:scaleY(1.05);
+    /* transform:scaleX(1.1); */
+}
+
+/* MENTOR/MENTEE SIGNUP SPECS */
+.signup-form-specs {
+    background-color: #F4EBE6;
+    color: #6A5955;
+    border: none;
+}
+.signup-button-specs {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.signup-form-fields {
+    color: #203851;
+    font-family: 'Roboto', 'Montserrat', 'Open Sans', sans-serif;
+}
+.signup-link-to-home-specs {
+    cursor:pointer;
+}
+.signup-link-to-home-specs:hover {
+    text-decoration: underline;
 }
