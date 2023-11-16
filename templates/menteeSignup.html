@@ -3,27 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MentorMatchup Sign Up</title>
+    <title>MentorMatchup Mentee Sign Up</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../static/css/styles.css">
     <script src="../static/js/script.js"></script>
 </head>
 <body>
 
-    <div class="container-fluid my-5">
-        <nav class="homepage-header d-flex justify-content-between align-items-center">
-            <span class="homepage-name primary-blue-color signup-link-to-home-specs signup-link-to-home-specs:hover" onclick="redirectToHomepage()">MentorMatchup</span>
-            <div>
-                <!-- <a href="#" class="mx-2">Home</a>
-                <a href="#" class="mx-2">Matches</a>
-                <a href="#" class="mx-2">Contact</a> -->
-                <a href="#" class="button-specs btn btn-outline-secondary rounded-pill">Sign In</a>
-            </div>
-        </nav>
-        <div class="row">
-            <div class="col-md-6 offset-md-3">
-                <h3 class="homepage-catchphrase text-center my-4">Mentee Sign Up</h3>
-                <form>
+<div class="container-fluid my-5">
+    <nav class="homepage-header d-flex justify-content-between align-items-center">
+        <span class="homepage-name primary-blue-color signup-link-to-home-specs signup-link-to-home-specs:hover" onclick="redirectToHomepage()">MentorMatchup</span>
+        <div>
+            <a href="signin.html" class="button-specs btn btn-outline-secondary rounded-pill">Sign In</a>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h3 class="homepage-catchphrase text-center my-4">Mentee Sign Up</h3>
+            <h4 class="signup-role-description text-center">Do you want advice from an experienced student on the job/internship application process?</h4>
+            <h4 class="signup-role-description text-center">Our platform connects you with mentors who have worked in the <strong>field</strong> you are interested in and has worked with <strong>companies</strong> you are curious about. Learn more about applying to jobs, interviewing, and selecting the job that's right for you.</h4>
+            <h4 class="signup-role-description text-center">Sign up below to connect with students in your <strong>campus community</strong> that will help you achieve your career goals!</h4>
+            <form id="menteeSignupForm">
                 <div class="form-group">
                     <input type="text" class="form-control signup-form-specs signup-form-fields" placeholder="Name" id="name">
                 </div>
@@ -37,47 +37,59 @@
                     <input type="password" class="form-control signup-form-specs signup-form-fields" placeholder="Confirm Password" id="confirm-password">
                 </div>
                 <div class="form-group">
-                    <select class="form-control signup-form-specs signup-form-fields" id="school">
+                    <select class="form-control signup-form-specs signup-form-fields" id="school" onchange="toggleOtherOption(id)">
                         <option value="" selected disabled>School</option>
                         <option>BC</option>
                         <option>SEAS</option>
                         <option>CC</option>
                         <option>GS</option>
-                        <!-- Add more options here -->
+                        <option value="other">Other</option>
                     </select>
+                    <input type="text" class="form-control signup-form-specs signup-form-fields" placeholder="Enter your option" id="other-school" style="display: none;">
+
                 </div>
                 <div class="form-group">
-                    <select class="form-control signup-form-specs signup-form-fields" id="major">
-                        <option>Major</option>
-                        <!-- Add more options here -->
+                    <select class="form-control signup-form-specs signup-form-fields" id="major" onchange="toggleOtherOption(id)">
+                        <option value="" selected disabled>Major</option>
+                        <option>Computer Science</option>
+                        <option>Economy</option>
+                        <option>Math</option>
+                        <option value="other">Other</option>
                     </select>
+                    <input type="text" class="form-control signup-form-specs signup-form-fields" placeholder="Enter your option" id="other-major" style="display: none;">
                 </div>
                 <div class="form-group">
                     <select class="form-control signup-form-specs signup-form-fields" id="years-of-experience">
-                        <option>Years of Experience</option>
-                        <!-- Add more options here -->
+                        <option value="" selected disabled>Years of Experience</option>
+                        <option>0-1</option>
+                        <option>1-2</option>
+                        <option>2-3</option>
+                        <option>3+</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <select class="form-control signup-form-specs signup-form-fields" id="jobs-of-interest">
+                    <select class="form-control signup-form-specs signup-form-fields" id="jobs-of-interest" onchange="toggleOtherOption(id)">
                         <option value="" selected disabled>Jobs You're Applying to</option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
+                        <option>Internships</option>
+                        <option>Full-Time</option>
+                        <option>Research</option>
+                        <option value="other">Other</option>
                     </select>
+                    <input type="text" class="form-control signup-form-specs signup-form-fields" placeholder="Enter your option" id="other-jobs-of-interest" style="display: none;">
                 </div>
                 <div class="form-group">
-                    <select class="form-control signup-form-specs signup-form-fields" id="companies-of-interest">
+                    <select class="form-control signup-form-specs signup-form-fields" id="companies-of-interest" onchange="toggleOtherOption(id)">
                         <option value="" selected disabled>Companies of Interest</option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
+                        <option>Microsoft</option>
+                        <option>Google</option>
+                        <option>Amazon</option>
+                        <option>Splunk</option>
+                        <option value="other">Other</option>     
                     </select>
+                    <input type="text" class="form-control signup-form-specs signup-form-fields" placeholder="Enter your option" id="other-companies-of-interest" style="display: none;">
                 </div>
                 <div class="form-group text-center">
-                    <button type="submit" class="btn btn-outline-secondary rounded-pill button-specs signup-button-specs">Sign Up</button>
+                    <button type="submit" class="btn btn-outline-secondary rounded-pill button-specs signup-button-specs" onclick="validatePassword('mentee', event)">Sign Up</button>
                 </div>
             </form>
         </div>

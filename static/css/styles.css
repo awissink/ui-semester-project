@@ -99,3 +99,19 @@
 .signup-link-to-home-specs:hover {
     text-decoration: underline;
 }
+.signup-titles {
+    font-size: 40px;
+    font-weight: medium;
+    /* padding-bottom: 20px;  */
+    color: #384E71;
+}
+.signup-role-description {
+    font-family: 'Roboto', 'Montserrat', 'Open Sans', sans-serif;
+    color: #343436;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+form {
+    max-width: 500px;
+    margin: auto;
+}
