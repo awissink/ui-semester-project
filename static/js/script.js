@@ -1,12 +1,12 @@
 //REDIRECTION FUNCTIONS
 function redirectToHomepage() {
-    window.location.href = '../../templates/index.html';
+    window.location.href = 'index.html';
 }
 function redirectToMenteeMessages() {
-    window.location.href = '../../templates/menteeMessages.html';
+    window.location.href = 'menteeMessages.html';
 }
 function redirectToMentorMessages() {
-    window.location.href = '../../templates/mentorMessages.html';
+    window.location.href = 'mentorMessages.html';
 }
 function redirectToMessages(role) {
     console.log("redirecting to messages page for role:", role)
@@ -28,6 +28,8 @@ function validatePassword(role, event) {
     } else {
         redirectToMessages(role);
     }
+
+    return false;
  
 }
 

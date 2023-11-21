@@ -23,19 +23,25 @@
             <h4 class="signup-role-description text-center">Do you have experience in your field that you want to share?</h4>
             <h4 class="signup-role-description text-center">Our platform connects you with students who are interested in the field you have experience in and the companies you’ve worked for. <strong>Share your advice</strong> on applying to jobs, interviewing, career development, and more. </h4>
             <h4 class="signup-role-description text-center">Sign up below to help students in your <strong>campus community</strong> achieve their career goals!</h4>
-            <form id="mentorSignupForm">
+            <!-- MENTOR SIGNUP FORM -->
+            <form id="mentorSignupForm" onSubmit="return validatePassword('mentor', event)">
+                <!-- NAME -->
                 <div class="form-group">
                     <input type="text" class="form-control signup-form-specs signup-form-fields" placeholder="Name" id="name">
                 </div>
+                <!-- EMAIL -->
                 <div class="form-group">
                     <input type="email" class="form-control signup-form-specs signup-form-fields" placeholder="Email" id="email">
                 </div>
+                <!-- PASSWORD -->
                 <div class="form-group">
                     <input type="password" class="form-control signup-form-specs signup-form-fields" placeholder="Password" id="password">
                 </div>
+                <!-- CONFIRM PASSWORD -->
                 <div class="form-group">
                     <input type="password" class="form-control signup-form-specs signup-form-fields" placeholder="Confirm Password" id="confirm-password">
                 </div>
+                <!-- SCHOOL -->
                 <div class="form-group">
                     <select class="form-control signup-form-specs signup-form-fields" id="school" onchange="toggleOtherOption(id)">
                         <option value="" selected disabled>School</option>
@@ -47,6 +53,7 @@
                     </select>
                     <input type="text" class="form-control signup-form-specs signup-form-fields" placeholder="Enter your option" id="other-school" style="display: none;">
                 </div>
+                <!-- MAJOR -->
                 <div class="form-group">
                     <select class="form-control signup-form-specs signup-form-fields" id="major" onchange="toggleOtherOption(id)">
                         <option value="" selected disabled>Major</option>
@@ -57,6 +64,7 @@
                     </select>
                     <input type="text" class="form-control signup-form-specs signup-form-fields" placeholder="Enter your option" id="other-major" style="display: none;">
                 </div>
+                <!-- YEARS OF EXPERIENCE -->
                 <div class="form-group">
                     <select class="form-control signup-form-specs signup-form-fields" id="years-of-experience">
                         <option value="" selected disabled>Years of Experience</option>
@@ -66,6 +74,7 @@
                         <option>3+</option>
                     </select>
                 </div>
+                <!-- PAST EXPERIENCE -->
                 <div class="form-group">
                     <select class="form-control signup-form-specs signup-form-fields" id="past-experience" onchange="toggleOtherOption(id)">
                         <option value="" selected disabled>Past Experience</option>
@@ -76,6 +85,7 @@
                     </select>
                     <input type="text" class="form-control signup-form-specs signup-form-fields" placeholder="Enter your option" id="other-past-experience" style="display: none;">
                 </div>
+                <!-- PAST COMPANIES -->
                 <div class="form-group">
                     <select class="form-control signup-form-specs signup-form-fields" id="past-companies" onchange="toggleOtherOption(id)">
                         <option value="" selected disabled>Past Companies</option>
@@ -87,8 +97,9 @@
                     </select>
                     <input type="text" class="form-control signup-form-specs signup-form-fields" placeholder="Enter your option" id="other-past-companies" style="display: none;">
                 </div>
+                <!-- FORM SUBMIT BUTTON -->
                 <div class="form-group text-center">
-                    <button type="submit" class="btn btn-outline-secondary rounded-pill button-specs signup-button-specs" onclick="validatePassword('mentor', event)">Sign Up</button>
+                    <button type="submit" class="btn btn-outline-secondary rounded-pill button-specs signup-button-specs">Sign Up</button>
                 </div>
             </form>
         </div>

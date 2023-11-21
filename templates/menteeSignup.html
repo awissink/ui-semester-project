@@ -23,19 +23,25 @@
             <h4 class="signup-role-description text-center">Do you want advice from an experienced student on the job/internship application process?</h4>
             <h4 class="signup-role-description text-center">Our platform connects you with mentors who have worked in the <strong>field</strong> you are interested in and has worked with <strong>companies</strong> you are curious about. Learn more about applying to jobs, interviewing, and selecting the job that's right for you.</h4>
             <h4 class="signup-role-description text-center">Sign up below to connect with students in your <strong>campus community</strong> that will help you achieve your career goals!</h4>
-            <form id="menteeSignupForm">
+            <!-- MENTEE SIGNUP FORM -->
+            <form id="menteeSignupForm" onSubmit="return validatePassword('mentee', event)">
+                <!-- NAME -->
                 <div class="form-group">
                     <input type="text" class="form-control signup-form-specs signup-form-fields" placeholder="Name" id="name">
                 </div>
+                <!-- EMAIL -->
                 <div class="form-group">
                     <input type="email" class="form-control signup-form-specs signup-form-fields" placeholder="Email" id="email">
                 </div>
+                <!-- PASSWORD -->
                 <div class="form-group">
                     <input type="password" class="form-control signup-form-specs signup-form-fields" placeholder="Password" id="password">
                 </div>
+                <!-- CONFIRM PASSWORD -->
                 <div class="form-group">
                     <input type="password" class="form-control signup-form-specs signup-form-fields" placeholder="Confirm Password" id="confirm-password">
                 </div>
+                <!-- SCHOOL -->
                 <div class="form-group">
                     <select class="form-control signup-form-specs signup-form-fields" id="school" onchange="toggleOtherOption(id)">
                         <option value="" selected disabled>School</option>
@@ -46,8 +52,8 @@
                         <option value="other">Other</option>
                     </select>
                     <input type="text" class="form-control signup-form-specs signup-form-fields" placeholder="Enter your option" id="other-school" style="display: none;">
-
                 </div>
+                <!-- MAJOR -->
                 <div class="form-group">
                     <select class="form-control signup-form-specs signup-form-fields" id="major" onchange="toggleOtherOption(id)">
                         <option value="" selected disabled>Major</option>
@@ -58,6 +64,7 @@
                     </select>
                     <input type="text" class="form-control signup-form-specs signup-form-fields" placeholder="Enter your option" id="other-major" style="display: none;">
                 </div>
+                <!-- YEARS OF EXPERIENCE -->
                 <div class="form-group">
                     <select class="form-control signup-form-specs signup-form-fields" id="years-of-experience">
                         <option value="" selected disabled>Years of Experience</option>
@@ -67,6 +74,7 @@
                         <option>3+</option>
                     </select>
                 </div>
+                <!-- JOB TYPE APPLYING TO -->
                 <div class="form-group">
                     <select class="form-control signup-form-specs signup-form-fields" id="jobs-of-interest" onchange="toggleOtherOption(id)">
                         <option value="" selected disabled>Jobs You're Applying to</option>
@@ -77,6 +85,7 @@
                     </select>
                     <input type="text" class="form-control signup-form-specs signup-form-fields" placeholder="Enter your option" id="other-jobs-of-interest" style="display: none;">
                 </div>
+                <!-- COMPANIES OF INTEREST -->
                 <div class="form-group">
                     <select class="form-control signup-form-specs signup-form-fields" id="companies-of-interest" onchange="toggleOtherOption(id)">
                         <option value="" selected disabled>Companies of Interest</option>
@@ -89,7 +98,7 @@
                     <input type="text" class="form-control signup-form-specs signup-form-fields" placeholder="Enter your option" id="other-companies-of-interest" style="display: none;">
                 </div>
                 <div class="form-group text-center">
-                    <button type="submit" class="btn btn-outline-secondary rounded-pill button-specs signup-button-specs" onclick="validatePassword('mentee', event)">Sign Up</button>
+                    <button type="submit" class="btn btn-outline-secondary rounded-pill button-specs signup-button-specs">Sign Up</button>
                 </div>
             </form>
         </div>

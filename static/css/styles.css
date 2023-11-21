@@ -23,7 +23,6 @@
 .homepage-header {
     padding-left: 60px;
     padding-right: 60px;
-    /* padding-bottom: 20px; */
 }
 .homepage-catchphrase {
     font-size: 40px;
@@ -38,7 +37,6 @@
 .homepage-body-padding {
     padding-left: 60px;
     padding-right: 60px;
-    /* padding-bottom: 20px; */
 }
 .homepage-left-div {
     padding-top: 20px;
@@ -70,13 +68,11 @@
 .homepage-footer-padding {
     padding-left: 40px;
     padding-right: 40px;
-    /* padding-top: 20px; */
     padding-bottom: 20px;
 }
 .homepage-purpose {
     font-size: 25px;
     transform:scaleY(1.05);
-    /* transform:scaleX(1.1); */
 }
 
 /* MENTOR/MENTEE SIGNUP SPECS */
@@ -102,7 +98,6 @@
 .signup-titles {
     font-size: 40px;
     font-weight: medium;
-    /* padding-bottom: 20px;  */
     color: #384E71;
 }
 .signup-role-description {
