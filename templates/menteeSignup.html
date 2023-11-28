@@ -76,8 +76,8 @@
                 </div>
                 <!-- JOB TYPE APPLYING TO -->
                 <div class="form-group">
-                    <select class="form-control signup-form-specs signup-form-fields" id="jobs-of-interest" onchange="toggleOtherOption(id)">
-                        <option value="" selected disabled>Jobs You're Applying to</option>
+                    <select class="form-control signup-form-specs signup-form-fields" id="jobs-of-interest" onchange="toggleOtherOption(id)" multiple>
+                        <option value="" selected disabled>Jobs You're Applying to (Ctrl/Cmd to select multiple)</option>
                         <option>Internships</option>
                         <option>Full-Time</option>
                         <option>Research</option>
@@ -87,15 +87,32 @@
                 </div>
                 <!-- COMPANIES OF INTEREST -->
                 <div class="form-group">
-                    <select class="form-control signup-form-specs signup-form-fields" id="companies-of-interest" onchange="toggleOtherOption(id)">
-                        <option value="" selected disabled>Companies of Interest</option>
-                        <option>Microsoft</option>
-                        <option>Google</option>
+                    <select class="form-control signup-form-specs signup-form-fields" id="companies-of-interest" onchange="toggleOtherOption(id)" multiple>
+                        <option value="" selected disabled>Companies of Interest (Ctrl/Cmd to select multiple)</option>
                         <option>Amazon</option>
+                        <option>Apple</option>
+                        <option>Cidadel</option>
+                        <option>Fidelity</option>
+                        <option>Goldman Sachs</option>
+                        <option>Google</option>
+                        <option>IBM</option>
+                        <option>Jane Street</option>
+                        <option>JPMorgan</option>
+                        <option>Meta</option>
+                        <option>Microsoft</option>
+                        <option>Netflix</option>
+                        <option>Oracle</option>
+                        <option>Roblox</option>
+                        <option>Salesforce</option>
                         <option>Splunk</option>
-                        <option value="other">Other</option>     
+                        <option>Tesla</option>
+                        <option>Vanguard</option>
                     </select>
                     <input type="text" class="form-control signup-form-specs signup-form-fields" placeholder="Enter your option" id="other-companies-of-interest" style="display: none;">
+                </div>
+                <!-- OTHER COMPANIES OF INTEREST -->
+                <div class="form-group">
+                    <input type="Other Companies of Interest" class="form-control signup-form-specs signup-form-fields" placeholder="Other Companies of Interest (Optional)" id="other-companies-of-interest">
                 </div>
                 <div class="form-group text-center">
                     <button type="submit" class="btn btn-outline-secondary rounded-pill button-specs signup-button-specs">Sign Up</button>
