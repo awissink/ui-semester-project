@@ -107,13 +107,27 @@
                         <option>Splunk</option>
                         <option>Tesla</option>
                         <option>Vanguard</option>
+                        <option value="other">Other</option>
                     </select>
-                    <input type="text" class="form-control signup-form-specs signup-form-fields" placeholder="Enter your option" id="other-companies-of-interest" style="display: none;">
                 </div>
                 <!-- OTHER COMPANIES OF INTEREST -->
-                <div class="form-group">
-                    <input type="Other Companies of Interest" class="form-control signup-form-specs signup-form-fields" placeholder="Other Companies of Interest (Optional)" id="other-companies-of-interest">
+                <div class="form-group" id="other-companies-group" style="display: none;">
+                    <input type="Other Companies of Interest" class="form-control signup-form-specs signup-form-fields" placeholder="Other Companies of Interest (Optional)">
                 </div>
+                <script>
+                    function toggleOtherOption() {
+                        var selectElement = document.getElementById("companies-of-interest");
+                        var otherCompaniesGroup = document.getElementById("other-companies-group");
+                
+                        var otherOption = document.querySelector('#companies-of-interest option[value="other"]');
+                        
+                        if (otherOption.selected) {
+                            otherCompaniesGroup.style.display = "block";
+                        } else {
+                            otherCompaniesGroup.style.display = "none";
+                        }
+                    }
+                </script>
                 <div class="form-group text-center">
                     <button type="submit" class="btn btn-outline-secondary rounded-pill button-specs signup-button-specs">Sign Up</button>
                 </div>
