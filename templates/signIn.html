@@ -14,13 +14,24 @@
     <nav class="homepage-header d-flex justify-content-between align-items-center">
         <span class="homepage-name primary-blue-color signup-link-to-home-specs signup-link-to-home-specs:hover" onclick="redirectToHomepage()">MentorMatchup</span>
     </nav>
+
     <div class="row">
         <div class="col-md-6 offset-md-3">
-            <h3 class="signup-titles text-center my-4">Sign In Page</h3>
+            <h3 class="homepage-catchphrase text-center my-4">Sign In</h3>
+            <!-- EMAIL -->
+            <div class="form-group">
+                <input type="email" class="form-control signup-form-specs signup-form-fields" placeholder="Email" id="email">
+            </div>
+            <!-- PASSWORD -->
+            <div class="form-group">
+                <input type="password" class="form-control signup-form-specs signup-form-fields" placeholder="Password" id="password">
+            </div>
+            <div style="text-align: center;">
+                <button type="submit" class="btn btn-outline-secondary rounded-pill button-specs signup-button-specs" onclick="redirectToMenteeMessages()">Sign In</button>
+            </div>
         </div>
     </div>
-    <button type="submit" class="btn btn-outline-secondary rounded-pill button-specs signup-button-specs" onclick="redirectToMenteeMessages()">Sign In as Mentee</button>
-    <button type="submit" class="btn btn-outline-secondary rounded-pill button-specs signup-button-specs" onclick="redirectToMentorMessages()">Sign In as Mentor</button>
+
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
