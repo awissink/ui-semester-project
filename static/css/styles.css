@@ -165,14 +165,13 @@ form {
     font-size: 0.9rem;
   }
   
-/* Adjust the form control to be rounded and taller */
 .input-group .form-control {
     flex-grow: 1;
-    border-radius: 30px !important; /* More rounded corners for input */
-    padding: 1.25rem 1rem !important; /* Spacious padding for height and comfort */
-    border: 1px solid #ced4da; /* Match Bootstrap's default styling */
-    margin-left: -1px; /* Overlap the border with the prompt button */
-    font-size: 1rem; /* Adjust font size if necessary */
+    border-radius: 30px !important;
+    padding: 1.25rem 1rem !important;
+    border: 1px solid #ced4da;
+    margin-left: -1px;
+    font-size: 1rem;
   }
   
   
