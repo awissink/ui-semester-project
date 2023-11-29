@@ -191,4 +191,46 @@ form {
     color: #384E71;
     padding-left: 1rem;
   }
-  
+
+
+.navbar-button {
+    background-color: #ECC6BB;
+    color: black;
+    border-radius: 50%; 
+}
+.navbar-nav {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.message-box-custom {
+    padding: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px; 
+    border-radius: 30px; 
+    border: 4px solid #ECC6BB;
+    background-color: transparent;
+    max-width: 800px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+
+
+.match-names {
+    font-family: 'Roboto', 'Montserrat', 'Open Sans', sans-serif;
+    color: #343436;
+    font-size: 23px;
+}
+
+.message-descriptions {
+    font-family: 'Roboto', 'Montserrat', 'Open Sans', sans-serif;
+    color: #343436;
+    font-size: 18px;
+}
+
+.navbar-brand {
+    font-size: 23px;
+}
+

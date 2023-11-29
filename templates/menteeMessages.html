@@ -10,17 +10,39 @@
 </head>
 <body>
 
-<div class="container-fluid my-5">
-    <nav class="homepage-header d-flex justify-content-between align-items-center">
-        <span class="homepage-name primary-blue-color">MentorMatchup</span>
-        <div>
-            <a>Mentors</a>
-            <a href="menteeProfile.html" class="button-specs btn btn-outline-secondary rounded-pill">Mentee Profile</a>
+<div class="container my-5">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: transparent;">
+        <a class="navbar-brand primary-blue-color" href="index.html">MentorMatchup</a>
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="index.html">Home</a>
+            <a class="nav-item nav-link active" href="#">Mentors</a>
+            <a class="nav-item nav-link" href="#">Contact</a>
+        </div>
+        <div class="navbar-nav ml-auto">
+            <button onclick="window.location.href='mentorProfile.html'" class="button-specs btn btn-outline-secondary rounded-pill mr-2">Lauren H</button>
         </div>
     </nav>
-    <div class="row">
-        <div class="col-md-6 offset-md-3">
-            <h3 class="signup-titles text-center my-4">Mentee Messages Page</h3>
+
+    <!-- Messages -->
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10">
+            <div class="message-box-custom">
+                <p class="match-names">Kaitlyn H</p>
+                <p class="message-descriptions">Hi Lauren, I’m excited to be your job application mentor this year!</p>
+            </div>
+            <div class="message-box-custom">
+                <p class="match-names">Alex Y</p>
+                <p class="message-descriptions">Let’s meet on Tuesday to go through some practice interview questions.</p>
+            </div>
+            <div class="message-box-custom">
+                <p class="match-names">Claudia T</p>
+                <p class="message-descriptions">I like to keep track of the name of the company, the position I applied...</p>
+            </div>
+            <div class="message-box-custom">
+                <p class="match-names">Chloe S</p>
+                <p class="message-descriptions">Looking forward to meeting tomorrow!</p>
+            </div>
         </div>
     </div>
 </div>
