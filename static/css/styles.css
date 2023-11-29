@@ -234,3 +234,75 @@ form {
     font-size: 23px;
 }
 
+body {
+    font-family: 'Roboto', 'Montserrat', 'Open Sans', sans-serif;
+    color: #343436;
+}
+
+.navbar-brand, .nav-link {
+    color: #384E71 !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #384E71;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link:focus {
+    color: #ECC6BB;
+}
+
+.profile-header h2 {
+    font-size: 2.5rem;
+    color: #384E71;
+}
+
+.profile-icon {
+    font-size: 1.5rem;
+}
+
+.profile-info {
+    padding: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    border: 4px solid #ECC6BB;
+    background-color: #FFFFFF;
+    width: 100%;
+    max-width: 1500px;
+}
+
+.profile-info p {
+    font-size: 23px;
+    margin-bottom: 24px;
+}
+
+.btn.rounded-pill {
+    background-color: #ECC6BB;
+    color: black;
+}
+
+.navbar {
+    background-color: transparent !important;
+}
+
+.contact-form {
+    background-color: #FFFFFF;
+}
+
+.btn-outline-secondary {
+    border-color: transparent;
+}
+
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus,
+.btn-outline-secondary:active {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.no-border {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+
