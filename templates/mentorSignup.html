@@ -76,8 +76,8 @@
                 </div>
                 <!-- PAST EXPERIENCE -->
                 <div class="form-group">
-                    <select class="form-control signup-form-specs signup-form-fields" id="past-experience" onchange="toggleOtherOption(id)">
-                        <option value="" selected disabled>Past Experience</option>
+                    <select class="form-control signup-form-specs signup-form-fields" id="past-experience" onchange="toggleOtherOption(id)" multiple>
+                        <option value="" selected disabled>Past Experience (Ctrl/Cmd to select multiple)</option>
                         <option>Internships</option>
                         <option>Full-Time</option>
                         <option>Research</option>
@@ -87,16 +87,47 @@
                 </div>
                 <!-- PAST COMPANIES -->
                 <div class="form-group">
-                    <select class="form-control signup-form-specs signup-form-fields" id="past-companies" onchange="toggleOtherOption(id)">
-                        <option value="" selected disabled>Past Companies</option>
-                        <option>Microsoft</option>
-                        <option>Google</option>
+                    <select class="form-control signup-form-specs signup-form-fields" id="past-companies" onchange="toggleOtherOption(id)" multiple>
+                        <option value="" selected disabled>Past Companies (Ctrl/Cmd to select multiple)</option>
                         <option>Amazon</option>
+                        <option>Apple</option>
+                        <option>Cidadel</option>
+                        <option>Fidelity</option>
+                        <option>Goldman Sachs</option>
+                        <option>Google</option>
+                        <option>IBM</option>
+                        <option>Jane Street</option>
+                        <option>JPMorgan</option>
+                        <option>Meta</option>
+                        <option>Microsoft</option>
+                        <option>Netflix</option>
+                        <option>Oracle</option>
+                        <option>Roblox</option>
+                        <option>Salesforce</option>
                         <option>Splunk</option>
+                        <option>Tesla</option>
+                        <option>Vanguard</option>
                         <option value="other">Other</option>
                     </select>
-                    <input type="text" class="form-control signup-form-specs signup-form-fields" placeholder="Enter your option" id="other-past-companies" style="display: none;">
                 </div>
+                <!-- OTHER COMPANIES OF INTEREST -->
+                <div class="form-group" id="other-companies-group" style="display: none;">
+                    <input type="Other Past Companies" class="form-control signup-form-specs signup-form-fields" placeholder="Other Past Companies (Optional)">
+                </div>
+                <script>
+                    function toggleOtherOption() {
+                        var selectElement = document.getElementById("past-companies");
+                        var otherCompaniesGroup = document.getElementById("other-companies-group");
+                
+                        var otherOption = document.querySelector('#past-companies option[value="other"]');
+                        
+                        if (otherOption.selected) {
+                            otherCompaniesGroup.style.display = "block";
+                        } else {
+                            otherCompaniesGroup.style.display = "none";
+                        }
+                    }
+                </script>
                 <!-- FORM SUBMIT BUTTON -->
                 <div class="form-group text-center">
                     <button type="submit" class="btn btn-outline-secondary rounded-pill button-specs signup-button-specs">Sign Up</button>

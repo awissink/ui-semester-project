@@ -165,14 +165,13 @@ form {
     font-size: 0.9rem;
   }
   
-/* Adjust the form control to be rounded and taller */
 .input-group .form-control {
     flex-grow: 1;
-    border-radius: 30px !important; /* More rounded corners for input */
-    padding: 1.25rem 1rem !important; /* Spacious padding for height and comfort */
-    border: 1px solid #ced4da; /* Match Bootstrap's default styling */
-    margin-left: -1px; /* Overlap the border with the prompt button */
-    font-size: 1rem; /* Adjust font size if necessary */
+    border-radius: 30px !important;
+    padding: 1.25rem 1rem !important;
+    border: 1px solid #ced4da;
+    margin-left: -1px;
+    font-size: 1rem;
   }
   
   
@@ -193,11 +192,11 @@ form {
     padding-left: 1rem;
   }
 
-/* Custom styles for the navbar button */
+
 .navbar-button {
     background-color: #ECC6BB;
     color: black;
-    border-radius: 50%; /* Make the button round */
+    border-radius: 50%; 
 }
 .navbar-nav {
     padding-left: 30px;
@@ -205,20 +204,18 @@ form {
 }
 
 
-/* Custom styles for message boxes */
 .message-box-custom {
     padding: 25px;
     margin-top: 30px;
-    margin-bottom: 30px; /* Added for spacing between boxes */
-    border-radius: 30px; /* Optional: rounded corners */
+    margin-bottom: 30px; 
+    border-radius: 30px; 
     border: 4px solid #ECC6BB;
     background-color: transparent;
-    max-width: 800px; /* Set the maximum width */
-    margin-left: auto; /* Center the box */
-    margin-right: auto; /* Center the box */
+    max-width: 800px; 
+    margin-left: auto; 
+    margin-right: auto; 
 }
 
-/* Other existing styles remain unchanged */
 
 
 .match-names {
@@ -236,3 +233,4 @@ form {
 .navbar-brand {
     font-size: 23px;
 }
+
