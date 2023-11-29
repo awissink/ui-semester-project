@@ -110,3 +110,86 @@ form {
     max-width: 500px;
     margin: auto;
 }
+
+/* CHAT STYLES */
+  
+  .container {
+    padding-top: 1rem;
+  }
+  
+  .chat-window {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 90px; 
+  }
+  
+  .message-box {
+    max-width: 80%;
+    margin-bottom: 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .left {
+    background-color: #F4EBE6;
+    color: #343436; 
+    margin-right: auto;
+  }
+  
+  .right {
+    background-color: #A0C9E7;
+    color: #fff;
+    margin-left: auto;
+  }
+  
+.input-group {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background: #f8f9fa; 
+    box-shadow: 0 -2px 4px rgba(0,0,0,.1); 
+  }
+  
+  .btn-prompt {
+    margin-right: 1rem;
+    border-radius: 20px !important;
+    background-color: #ECC6BB;
+    color: #6A5955;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+  
+/* Adjust the form control to be rounded and taller */
+.input-group .form-control {
+    flex-grow: 1;
+    border-radius: 30px !important; /* More rounded corners for input */
+    padding: 1.25rem 1rem !important; /* Spacious padding for height and comfort */
+    border: 1px solid #ced4da; /* Match Bootstrap's default styling */
+    margin-left: -1px; /* Overlap the border with the prompt button */
+    font-size: 1rem; /* Adjust font size if necessary */
+  }
+  
+  
+  .input-group .btn-outline-secondary {
+    border-radius: 30px;
+    border: 1px solid #ced4da;
+    background-color: #A0C9E7;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-left: -15px;
+  }
+  
+  
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #384E71;
+    padding-left: 1rem;
+  }
+  
