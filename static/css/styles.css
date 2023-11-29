@@ -192,4 +192,47 @@ form {
     color: #384E71;
     padding-left: 1rem;
   }
-  
+
+/* Custom styles for the navbar button */
+.navbar-button {
+    background-color: #ECC6BB;
+    color: black;
+    border-radius: 50%; /* Make the button round */
+}
+.navbar-nav {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+/* Custom styles for message boxes */
+.message-box-custom {
+    padding: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px; /* Added for spacing between boxes */
+    border-radius: 30px; /* Optional: rounded corners */
+    border: 4px solid #ECC6BB;
+    background-color: transparent;
+    max-width: 800px; /* Set the maximum width */
+    margin-left: auto; /* Center the box */
+    margin-right: auto; /* Center the box */
+}
+
+/* Other existing styles remain unchanged */
+
+
+.match-names {
+    font-family: 'Roboto', 'Montserrat', 'Open Sans', sans-serif;
+    color: #343436;
+    font-size: 23px;
+}
+
+.message-descriptions {
+    font-family: 'Roboto', 'Montserrat', 'Open Sans', sans-serif;
+    color: #343436;
+    font-size: 18px;
+}
+
+.navbar-brand {
+    font-size: 23px;
+}
