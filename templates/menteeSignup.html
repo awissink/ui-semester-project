@@ -83,7 +83,10 @@
                         <option>Research</option>
                         <option value="other">Other</option>
                     </select>
-                    <input type="text" class="form-control signup-form-specs signup-form-fields" placeholder="Enter your option" id="other-jobs-of-interest" style="display: none;">
+                </div>
+                <!-- OTHER JOBS YOU'RE APPLYING TO -->
+                <div class="form-group" id="other-jobs" style="display: none;">
+                    <input type="Other Jobs You're Applying to" class="form-control signup-form-specs signup-form-fields" placeholder="Other Jobs You're Applying To">
                 </div>
                 <!-- COMPANIES OF INTEREST -->
                 <div class="form-group">
@@ -112,9 +115,10 @@
                 </div>
                 <!-- OTHER COMPANIES OF INTEREST -->
                 <div class="form-group" id="other-companies-group" style="display: none;">
-                    <input type="Other Companies of Interest" class="form-control signup-form-specs signup-form-fields" placeholder="Other Companies of Interest (Optional)">
+                    <input type="Other Companies of Interest" class="form-control signup-form-specs signup-form-fields" placeholder="Other Companies of Interest">
                 </div>
                 <script>
+
                     function toggleOtherOption() {
                         var selectElement = document.getElementById("companies-of-interest");
                         var otherCompaniesGroup = document.getElementById("other-companies-group");
@@ -125,6 +129,17 @@
                             otherCompaniesGroup.style.display = "block";
                         } else {
                             otherCompaniesGroup.style.display = "none";
+                        }
+
+                        var selectElement = document.getElementById("jobs-of-interest");
+                        var otherJobsGroup = document.getElementById("other-jobs");
+                
+                        var otherOption = document.querySelector('#jobs-of-interest option[value="other"]');
+                        
+                        if (otherOption.selected) {
+                            otherJobsGroup.style.display = "block";
+                        } else {
+                            otherJobsGroup.style.display = "none";
                         }
                     }
                 </script>
