@@ -2,19 +2,8 @@
 function redirectToHomepage() {
     window.location.href = 'index.html';
 }
-function redirectToMenteeMessages() {
-    window.location.href = 'menteeMessages.html';
-}
-function redirectToMentorMessages() {
-    window.location.href = 'mentorMessages.html';
-}
-function redirectToMessages(role) {
-    console.log("redirecting to messages page for role:", role)
-    if (role === "mentee") {
-        redirectToMenteeMessages();
-    } else if (role === "mentor") {
-        redirectToMentorMessages();
-    }
+function redirectToMessages() {
+    window.location.href = 'messages.html';
 }
 
 //VALIDATE PASSWORDS
@@ -26,7 +15,7 @@ function validatePassword(role, event) {
         alert("Passwords do not match");
         event.preventDefault(); // Prevent form submission
     } else {
-        redirectToMessages(role);
+        redirectToMessages();
     }
 
     return false;
