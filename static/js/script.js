@@ -33,3 +33,4 @@ function toggleOtherOption(formID) {
     otherInput.style.display = select.value === "other" ? "block" : "none";
 
 }
+

@@ -7,6 +7,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="../static/css/styles.css">
+    <script src="../static/js/script.js"></script>
 </head>
 <script>
   document.addEventListener("DOMContentLoaded", function() {
@@ -33,6 +34,18 @@
         document.querySelector('.conversation-prompts').style.display = 'none';
         });
       });
+
+      document.getElementById("sendButton").addEventListener("click", function() {
+    var message = document.getElementById("textInput").value;
+    if (message.trim() !== '') {
+      var chatWindow = document.getElementById("chatWindow");
+      var newMessageDiv = document.createElement("div");
+      newMessageDiv.classList.add("message-box", "right");
+      newMessageDiv.textContent = message;
+      chatWindow.appendChild(newMessageDiv);
+      document.getElementById("textInput").value = '';
+    }
+  });
   });
 </script>
 <body>
@@ -52,16 +65,10 @@
 
     <div class="container mt-3">
       <h3 id="chatName">Default Name</h3>
-        <div class="chat-window">
+        <div class="chat-window" id="chatWindow">
           <div class="message-box left">
             Hi! I'm <span id="chatNamePlaceholder">Default Name</span>. Nice to meet you!
           </div>
-          <!-- <div class="message-box right">
-            I was also wondering what you use to keep track of your job applications?
-          </div>
-          <div class="message-box left">
-            I like to keep track of the name of the company, the position I applied to, the location(s), and my application status! I also sometimes link the company job portal.
-          </div> -->
         </div>
       </div>
       
@@ -69,7 +76,7 @@
         <button class="btn btn-prompt rounded-circle">Conversation Prompt</button>
         <input type="text" id="textInput" class="form-control" placeholder="Start typing...">
         <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button"><i class="fas fa-arrow-up"></i></button>
+          <button class="btn btn-outline-secondary" type="button" id="sendButton"><i class="fas fa-arrow-up"></i></button>
         </div>
       </div>
 </div>
