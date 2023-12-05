@@ -16,6 +16,22 @@
       if (name) {
           document.getElementById('chatName').innerText = name;
       }
+
+      const promptButton = document.querySelector('.btn-prompt');
+        const promptsContainer = document.querySelector('.conversation-prompts');
+
+        promptButton.addEventListener('click', function() {
+            promptsContainer.style.display = promptsContainer.style.display === 'none' ? 'block' : 'none';
+        });
+
+      const promptButtons = document.querySelectorAll('.prompt-circle');
+
+      promptButtons.forEach(button => {
+        button.addEventListener('click', function() {
+        document.getElementById('textInput').value = this.innerText;
+        document.querySelector('.conversation-prompts').style.display = 'none';
+        });
+      });
   });
 </script>
 <body>
@@ -50,11 +66,25 @@
       
       <div class="input-group p-3">
         <button class="btn btn-prompt rounded-circle">Conversation Prompt</button>
-        <input type="text" class="form-control" placeholder="Start typing...">
+        <input type="text" id="textInput" class="form-control" placeholder="Start typing...">
         <div class="input-group-append">
           <button class="btn btn-outline-secondary" type="button"><i class="fas fa-arrow-up"></i></button>
         </div>
       </div>
+</div>
+
+<div class="conversation-prompts" style="display: none;">
+  <div class="row">
+      <div class="col-md-4">
+          <button class="prompt-circle">What qualities do you look for in a workplace?</button>
+      </div>
+      <div class="col-md-4">
+          <button class="prompt-circle">What challenges did you face when applying to jobs? How did you overcome them?</button>
+      </div>
+      <div class="col-md-4">
+          <button class="prompt-circle">What tools do you use to keep track of your job applications? What information do you keep track of?</button>
+      </div>
+  </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
