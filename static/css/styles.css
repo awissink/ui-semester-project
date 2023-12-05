@@ -92,9 +92,6 @@
 .signup-link-to-home-specs {
     cursor:pointer;
 }
-.signup-link-to-home-specs:hover {
-    text-decoration: underline;
-}
 .signup-titles {
     font-size: 40px;
     font-weight: medium;
