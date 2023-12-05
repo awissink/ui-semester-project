@@ -85,6 +85,11 @@
                     </select>
                     <input type="text" class="form-control signup-form-specs signup-form-fields" placeholder="Enter your option" id="other-past-experience" style="display: none;">
                 </div>
+                <!-- OTHER PAST EXPERIENCE -->
+                <div class="form-group" id="other-past-experience" style="display: none;">
+                    <input type="Other Past Experience" class="form-control signup-form-specs signup-form-fields" placeholder="Other Past Experience">
+                </div>
+
                 <!-- PAST COMPANIES -->
                 <div class="form-group">
                     <select class="form-control signup-form-specs signup-form-fields" id="past-companies" onchange="toggleOtherOption(id)" multiple>
@@ -125,6 +130,17 @@
                             otherCompaniesGroup.style.display = "block";
                         } else {
                             otherCompaniesGroup.style.display = "none";
+                        }
+
+                        var selectElement = document.getElementById("past-experience");
+                        var otherExperienceGroup = document.getElementById("other-past-experience");
+                
+                        var otherOption = document.querySelector('#past-experience option[value="other"]');
+                        
+                        if (otherOption.selected) {
+                            otherExperienceGroup.style.display = "block";
+                        } else {
+                            otherExperienceGroup.style.display = "none";
                         }
                     }
                 </script>
