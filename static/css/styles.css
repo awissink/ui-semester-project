@@ -305,12 +305,11 @@ body {
 .conversation-prompts {
     text-align: center;
     width: 100%;
-    padding: 10px 0;
 }
 
 .prompt-circle {
-    width: 100%;
-    height: 65px;
+    width: 400px;
+    height: 70px;
     padding: 10px;
     border-radius: 20px;;
     background-color: #ECC6BB;
