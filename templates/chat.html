@@ -8,18 +8,49 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="../static/css/styles.css">
 </head>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const name = urlParams.get('name');
+
+      if (name) {
+          document.getElementById('chatName').innerText = name;
+      }
+
+      const promptButton = document.querySelector('.btn-prompt');
+        const promptsContainer = document.querySelector('.conversation-prompts');
+
+        promptButton.addEventListener('click', function() {
+            promptsContainer.style.display = promptsContainer.style.display === 'none' ? 'block' : 'none';
+        });
+
+      const promptButtons = document.querySelectorAll('.prompt-circle');
+
+      promptButtons.forEach(button => {
+        button.addEventListener('click', function() {
+        document.getElementById('textInput').value = this.innerText;
+        document.querySelector('.conversation-prompts').style.display = 'none';
+        });
+      });
+  });
+</script>
 <body>
 
-<div class="container-fluid my-5">
-    <nav class="homepage-header d-flex justify-content-between align-items-center">
-        <span class="homepage-name homepage-name primary-blue-color">MentorMatchup</span>
-        <div>
-            <a href="signin.html" class="button-specs btn btn-outline-secondary rounded-pill">Sign In</a>
-        </div>
-    </nav>
+<div class="container my-5">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: transparent;">
+      <a class="navbar-brand primary-blue-color homepage-name" href="index.html">MentorMatchup</a>
+      <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#"><strong>Matches</strong></a>
+          <a class="nav-item nav-link" href="contact.html">Contact</a>
+      </div>
+      <div class="navbar-nav ml-auto">
+          <button onclick="window.location.href='profile.html'" class="button-specs btn btn-outline-secondary rounded-pill mr-2">Lauren H</button>
+      </div>
+   </nav>
 
     <div class="container mt-3">
-        <h3>Claudia T</h3>
+      <h3 id="chatName">Default Name</h3>
         <div class="chat-window">
           <div class="message-box left">
             Good question! I use Notion to create a spreadsheet of all jobs I've applied to.
@@ -35,11 +66,25 @@
       
       <div class="input-group p-3">
         <button class="btn btn-prompt rounded-circle">Conversation Prompt</button>
-        <input type="text" class="form-control" placeholder="Start typing...">
+        <input type="text" id="textInput" class="form-control" placeholder="Start typing...">
         <div class="input-group-append">
           <button class="btn btn-outline-secondary" type="button"><i class="fas fa-arrow-up"></i></button>
         </div>
       </div>
+</div>
+
+<div class="conversation-prompts" style="display: none;">
+  <div class="row">
+      <div class="col-md-4">
+          <button class="prompt-circle">What qualities do you look for in a workplace?</button>
+      </div>
+      <div class="col-md-4">
+          <button class="prompt-circle">What challenges did you face when applying to jobs? How did you overcome them?</button>
+      </div>
+      <div class="col-md-4">
+          <button class="prompt-circle">What tools do you use to keep track of your job applications? What information do you keep track of?</button>
+      </div>
+  </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

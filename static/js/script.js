@@ -5,6 +5,9 @@ function redirectToHomepage() {
 function redirectToMessages() {
     window.location.href = 'messages.html';
 }
+function redirectToChat(chatName) {
+    window.location.href = 'chat.html?name=' + encodeURIComponent(chatName);
+}
 
 //VALIDATE PASSWORDS
 function validatePassword(role, event) {
