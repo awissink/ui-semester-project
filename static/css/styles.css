@@ -126,6 +126,21 @@ form {
     padding: 0.75rem 1rem;
     border-radius: 20px;
     font-size: 0.9rem;
+    background-color: #F9F6F1;
+  }
+
+  .message-button {
+    background-color: #ECC6BB;
+    margin-left: 40rem;
+    bottom: 10px;
+    right: 10px;
+    color: #6A5955;
+    border: none;
+    border-radius: 30px;
+  }
+
+  .message-button:hover {
+    background-color: #D4A091; 
   }
   
   .left {
@@ -203,8 +218,8 @@ form {
 
 .message-box-custom {
     padding: 25px;
-    margin-top: 30px;
-    margin-bottom: 30px; 
+    margin-top: 10px;
+    margin-bottom: 10px; 
     border-radius: 30px; 
     border: 4px solid #ECC6BB;
     background-color: transparent;
@@ -217,8 +232,8 @@ form {
 
 .match-names {
     font-family: 'Roboto', 'Montserrat', 'Open Sans', sans-serif;
-    color: #343436;
-    font-size: 23px;
+    color: #384E71;
+    font-size: 27px;
 }
 
 .message-descriptions {
